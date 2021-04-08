@@ -5,6 +5,8 @@ date:   2021-04-07 18:30:00 +0200
 categories: algorithms 3d
 ---
 
+{% include mathjs.html %}
+
 # The marching cubes algorithm
 
 ## Introduction
