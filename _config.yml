@@ -39,7 +39,8 @@ minima:
 
 # Build settings
 theme: minima
-remote-theme: jekyll/minima
+# remote-theme: jekyll/minima
+remote_theme: songzivong/dark-minima
 
 # theme: jekyll-theme-cayman
 plugins:
