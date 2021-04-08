@@ -19,7 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Amos Herz
-email: herzamos@gmail.com
+author:
+  name: Amos Herz
+  email: "herzamos@gmail.com"
+
 description: >- # this means to ignore newlines until "baseurl:"
   I'm Amos, a Computer Science student at ETH Zürich, currently attending his second semester.
   Here, on my blog, you'll find posts about the thing I try out out of boredom, enjoy the reading!
@@ -28,9 +31,11 @@ url: "https://herzamos.ch" # the base hostname & protocol for your site, e.g. ht
 
 minima:
   skin: dark
+  social_links:
+    github: herzamos
 
 # twitter_username: herzamos
-github_username:  herzamos
+
 
 # Build settings
 theme: minima
@@ -38,6 +43,9 @@ theme: minima
 # theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+
+include:
+  - "_img"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
