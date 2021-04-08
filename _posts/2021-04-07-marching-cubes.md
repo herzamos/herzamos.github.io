@@ -19,7 +19,7 @@ The main problem of this algorithm is the amount of data we'd need to compute, b
 As everyone knows a cube has 8 vertices. Since each one of those vertices can be either inside the isosurface or outisde, there are $$ 2^{8} = 256 $$ possible combinations of vertices. Luckily (again!) only $$ 14 $$ of those are actually relevant, since all the other are just rotations or mirrorings of these "base" cases.
 
 {% include image.html 
-    url="/_img/marching-cubes/cube-cobinations.jpg" 
+    url="/assets/img/cube-combinations.jpg" 
     description="FIgure 1: The fundamental cases of the marching cubes algorithm" 
     width="300"%}
 
