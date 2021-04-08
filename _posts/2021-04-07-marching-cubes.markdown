@@ -17,6 +17,7 @@ The main need the Marching Cube Algorithm tries to satisfy, is the need to form 
 ## The algorithm
 The main problem of this algorithm is the amount of data we'd need to compute, but luckily someone has already done its for us!
 As everyone knows a cube has 8 vertices. Since each one of those vertices can be either inside the isosurface or outisde, we get $$ 2^{8} = 256 $$ possible combinations of vertices. Luckily (again!) only 
-![My helpful screenshot]({{site.url}}/_img/marching-cubes/cube-cobinations.jpg)
+
+![My helpful screenshot]({{site.url}}/_img/marching-cubes/cube-cobinations.jpg){: width="300"  .center-image}
 
  [unity]: https://unity.com/

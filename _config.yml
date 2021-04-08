@@ -43,6 +43,7 @@ remote-theme: jekyll/minima
 # theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 include:
   - "_img"
