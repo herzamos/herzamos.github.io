@@ -14,11 +14,8 @@ While deciding the project to implement, I stumbled upon the marching cube algor
 ## The problem
 The main need the Marching Cube Algorithm tries to satisfy, is the need to form a facet approximation to an isosurface through a scalar field, sampled on a rectangle grid. A lot of big words huh? Let's make this simple: imagine to have a lot of points nicely distributed on a section of space. We now decide which of these points we want to be contained in our 3d surface, and which not. There we are! We can now pass our "marching cube" over all the points and make it draw triangles to "exclude" external vertices: each triangle will have his vertices between an excluded cube vertex and an included one (see Figure 1 for a reference).
 
-## Starting slow
-Before going 3D, I though starting with a 2D cave generator would have been a good idea
-
 ## The algorithm
-The main problem of this algorithm is the amount of data we'd need to compute, but luckily someone has already done its for us, and pre computed tables are [available online][3dtable]
+The main problem of this algorithm is the amount of data we'd need to compute, but luckily someone has already done that for us, and pre-computed tables are [available online][3dtable].
 As everyone knows a cube has 8 vertices. Since each one of those vertices can be either inside the isosurface or outisde, there are $$ 2^{8} = 256 $$ possible combinations of vertices. Luckily (again!) only $$ 14 $$ of those are actually relevant, since all the other are just rotations or mirrorings of these "base" cases.
 
 {% include image.html 
@@ -26,7 +23,8 @@ As everyone knows a cube has 8 vertices. Since each one of those vertices can be
     description="FIgure 1: The fundamental cases of the marching cubes algorithm" 
     width="300"%}
 
-
+## Starting slow
+Before going 3D, I thought starting with a 2D cave generator would have been a good idea to first learn the basics of Unity. That's when I encountered [this][https://www.youtube.com/watch?v=v7yyZZjF1z4] great video series, which helped me learn a lot.
 
 [unity]: https://unity.com/
 [3dtable]: http://paulbourke.net/geometry/polygonise/
