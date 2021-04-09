@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Marching Cubes Algorithm"
+title:  "The Marching Cubes Algorithm 1: Introduction & Procedural Cave Generation in 2D"
 date:   2021-04-07 18:30:00 +0200
 categories: algorithms 3d
 ---
@@ -23,5 +23,19 @@ As everyone knows a cube has 8 vertices. Since each one of those vertices can be
     description="FIgure 1: The fundamental cases of the marching cubes algorithm" 
     width="300"%}
 
+# Cave Generation
+
 ## Starting slow
 Before going 3D, I thought starting with a 2D cave generator would have been a good idea to first learn the basics of Unity. That's when I encountered [this](https://www.youtube.com/watch?v=v7yyZZjF1z4) great video series, which helped me learn a lot.
+
+## First steps into Unity
+
+The first thing I got to work was generating a 2D map, made of squares which are randomlz chosen to be black or white (Figure 2).
+
+{% include image.html 
+    url="/assets/img/cave-gen-1.png" 
+    description="Figure 2: A first approach to a random generated map" 
+    width="300"%}
+
+As you maybe already noticed, this set-up really looks like the starting point of a [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) game. Indeed, the procedural map generation will be based on [cellular automation](https://en.wikipedia.org/wiki/Cellular_automaton), but not on the set of rules Conway had defined.    
+The map generation is based on a seed system, and I also added some variables to play with for the map generation, such as a `fillPercent` field, with whom I could easily manage how much i wanted the map to be filled.
