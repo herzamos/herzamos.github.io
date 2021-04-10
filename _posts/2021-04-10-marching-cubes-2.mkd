@@ -18,6 +18,6 @@ Even though I was trying to accomplish it in 2D, I think you got the idea (and i
 The algorithm is the same as the one we discussed before for the 3D case, but in 2D. We start by dividing our space into squares, each one having his 4 vertices on 4 adjacent pixels in the drawing (see Figure 1 for an example).
 
 {% include image.html 
-    url="/assets/img/square-division.jpg" 
+    url="/assets/img/square-division.png" 
     description="Figure 1: An example of how the cave is divided into squares, using the seed "Marching Cubes"" 
     width="300"%}
