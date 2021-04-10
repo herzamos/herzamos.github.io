@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Marching Cubes Algorithm 2: Meshes"
+title:  "The Marching Cubes Algorithm 2: Meshes & Marching Squares"
 date:   2021-04-10 18:30:00 +0200
 categories: marching-cubes
 ---
@@ -15,9 +15,21 @@ The first thing I had to do was to Google what a mesh is, because I really had n
 Even though I was trying to accomplish it in 2D, I think you got the idea (and if you didn't, you wil soon, just keep reading :p): I am going to try to smooth out the borders of the caves from [my previous post](https://www.herzamos.ch/algorithms/3d/2021/04/09/marching-cubes-1.html).
 
 # The algorithm
-The algorithm is the same as the one we discussed before for the 3D case, but in 2D. We start by dividing our space into squares, each one having his 4 vertices on 4 adjacent pixels in the drawing (see Figure 1 for an example).
+The algorithm is the same as the one we discussed before for the 3D case, but in 2D (that's why it's called "Marching Squares"). We start by dividing our space into squares, each one having his 4 vertices on 4 adjacent pixels in the drawing (see Figure 1 for an example).
 
 {% include image.html 
     url="/assets/img/square-division.png" 
-    description="Figure 1: An example of how the cave is divided into squares, using the seed "Marching Cubes"" 
+    description="Figure 1: An example of how the cave is divided into squares, using the seed \"Marching Cubes\"" 
+    width="300"%}
+
+Each one of these squares will have 4 control points, one on each one of the square's edges. These points will then bve connected based on which vertices has to be inside the wall and which one has to be outside; figure 2 displays all the (16) possible combinations.
+
+{% include image.html 
+    url="/assets/img/look-up-table-marching-squares.png" 
+    description="Figure 2: All the possible combinations" 
+    width="300"%}
+
+{% include image.html 
+    url="/assets/img/look-up-table-marching-squares.png" 
+    description="Figure 3: Close up showing the \"control points\"" 
     width="300"%}
