@@ -45,9 +45,11 @@ The rule I've used are failry simple:
 - If it has less than 4 alive neighbour cells, make it die;
 - If it has exactly 4 alive neighbours, let it be as it is;
 
-This precise rule is what I found working the best to generate a cave-resembling shape. Moreover, I've added some tweaks to the code to make sure that near walls more cells become alive, and ensure that the more we go towards the end of the cave, the thicker the walls are. Some results can be obvserved below.
+This precise rule is what I found working the best to generate a cave-resembling shape. Moreover, I've added some tweaks to the code to make sure that near walls more cells become alive, and ensure that the more we go towards the end of the cave, the thicker the walls are. I decided to apply the rule for 5 iterations, which seemed to work just fine. Some results can be obvserved below.
 
 {% include image.html 
     url="assets\img\cave-gen-results.png" 
     description="Figure 3: Some of the results of the algorithm: on the left, two results displayed on a 128x64 grid; on the right, two bigger grids (500x250 on the top, 1000x500 on the bottom). All measures in "squares"." 
     width="300"%}
+
+In the end I played around with grid dimension, seeds, number of iterations and also tried changing the rule threshold (which was previously 4), but I didn't get any result worth mentioning.

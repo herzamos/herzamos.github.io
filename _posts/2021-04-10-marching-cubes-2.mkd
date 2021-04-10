@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "The Marching Cubes Algorithm 2: Meshes"
+date:   2021-04-10 18:30:00 +0200
+categories: algorithms 3d
+---
+
+## Mesh
+
+# First steps into meshes
+The first thing I had to do, is to Google what a mesh is, because I really  had no clue. A quick Wikipedia read and I am now a meshes expert! If you are also confused like I was by this term, it turn out it actually is a really simple concept:
+> In 3D computer graphics and solid modeling, a polygon mesh is a collection of vertices, edges and faces that defines the shape of a polyhedral object.
+> (Courtesy of [Wikipedia](https://en.wikipedia.org/wiki/Polygon_mesh).)
