@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Marching Cubes Algorithm 1: Introduction & Procedural Cave Generation in 2D"
-date:   2021-04-07 18:30:00 +0200
+date:   2021-04-09 18:30:00 +0200
 categories: algorithms 3d
 ---
 
@@ -35,7 +35,7 @@ The first thing I got to work was generating a 2D map, made of squares which are
 {% include image.html 
     url="/assets/img/cave-gen-1.png" 
     description="Figure 2: A first approach to a random generated map" 
-    width="300"%}
+    width="300" %}
 
 As you maybe already noticed, this set-up really looks like the starting point of a [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) game. Indeed, the procedural map generation will be based on [cellular automation](https://en.wikipedia.org/wiki/Cellular_automaton), but not on the set of rules Conway had defined.    
 The map generation is based on a seed system, and I also added some variables to play with for the map generation, such as a `fillPercent` field, with whom I could easily manage how much i wanted the map to be filled.
@@ -48,8 +48,9 @@ The rule I've used are failry simple:
 This precise rule is what I found working the best to generate a cave-resembling shape. Moreover, I've added some tweaks to the code to make sure that near walls more cells become alive, and ensure that the more we go towards the end of the cave, the thicker the walls are. I decided to apply the rule for 5 iterations, which seemed to work just fine. Some results can be obvserved below.
 
 {% include image.html 
-    url="assets\img\cave-gen-results.png" 
-    description="Figure 3: Some of the results of the algorithm: on the left, two results displayed on a 128x64 grid; on the right, two bigger grids (500x250 on the top, 1000x500 on the bottom). All measures in "squares"." 
-    width="300"%}
+    url="/assets/img/cave-gen-results.png" 
+    description="Figure 3: Some of the results of the algorithm: on the left, two results displayed on a 128x64 grid; on the right, two bigger grids (500x250 on the top, 1000x500 on the bottom). All measures in \"squares\"." 
+    width="600" %}
 
 In the end I played around with grid dimension, seeds, number of iterations and also tried changing the rule threshold (which was previously 4), but I didn't get any result worth mentioning.
+    
