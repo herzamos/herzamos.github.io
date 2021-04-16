@@ -20,7 +20,7 @@ As everyone knows a cube has 8 vertices. Since each one of those vertices can be
 
 {% include image.html 
     url="/assets/img/cube-combinations.jpg" 
-    description="FIgure 1: The fundamental cases of the marching cubes algorithm" 
+    description="Figure 1: The fundamental cases of the marching cubes algorithm" 
     width="300"%}
 
 ## Cave Generation

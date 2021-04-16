@@ -53,7 +53,7 @@ class WebringBannerDark extends HTMLElement {
           }
 
           .webring-banner-dark a {
-            color: #3297f5;
+            color: #2bbc8a;
             text-decoration: none;
           }
 
