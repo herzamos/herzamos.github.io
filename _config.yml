@@ -19,9 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Amos Herz
-description: >- # this means to ignore newlines until "baseurl:"
-  I'm Amos, a Computer Science student at ETH Zürich, currently attending his second semester.
-  Here, on my blog, you'll find posts about the things I try out out of boredom, enjoy the reading!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://herzamos.ch" # the base hostname & protocol for your site, e.g. http://example.com
 
