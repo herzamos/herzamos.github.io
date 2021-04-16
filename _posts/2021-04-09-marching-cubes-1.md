@@ -3,6 +3,7 @@ layout: post
 title:  "The Marching Cubes Algorithm 1: Introduction & Procedural Cave Generation in 2D"
 date:   2021-04-09 18:30:00 +0200
 categories:  marching-cubes
+tags: marching-cubes computer-graphic
 ---
 
 ## The marching cubes algorithm

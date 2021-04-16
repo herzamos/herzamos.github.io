@@ -48,3 +48,9 @@ $on-laptop:        800px !default;
   "minima/base",
   "minima/layout",
   "minima/syntax-highlighting";
+
+.post-content > h2::before, .post-content > h1::before {
+    content: "# ";
+    margin-left: -1.2em;
+    color: #2bbc8a;
+  }
