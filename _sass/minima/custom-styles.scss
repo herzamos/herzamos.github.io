@@ -25,3 +25,9 @@
 .a-tag::hover {
   text-decoration: none !important;
 }
+
+@include media-query($on-palm) {
+  .footer-col {
+    text-align: center;
+  }
+}
