@@ -32,7 +32,7 @@
     text-align: center;
   }
 
-  .post-content > h2::before, .post-content > h1::before {
+  .post-content > h2::before, .post-content > h1::before, .post-content > h3::before {
     content: "# ";
     color: #2bbc8a;
     margin-left: 0;
@@ -40,19 +40,19 @@
 }
 
 h1 {
-  font-size: 20pt !important;
+  font-size: 28px !important;
 }
 
 .post-content > h2 {
-  font-size: 18pt !important;
+  font-size: 24px !important;
 }
 
 .post-content > h3 {
-  font-size: 16pt !important;
+  font-size: 20px !important;
 }
 
 .post-content > p {
-  font-size: 12pt !important;
+  font-size: 16px !important;
 } 
 
 .tag {
