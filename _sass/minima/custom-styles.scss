@@ -9,7 +9,7 @@
 
 .tag {
   color: white;
-  background-color: #383838;
+  background-color: #2e2e32;
   text-decoration: none;
   display: inline-block;
 }
@@ -54,3 +54,31 @@ h1 {
 .post-content > p {
   font-size: 12pt !important;
 } 
+
+.tag {
+  font-size: 14px !important;
+}
+
+.read {
+  font-size: 16pt !important;
+  margin-top: 0.75em;
+}
+
+
+.read:visited {
+  color: $brand-color !important;
+}
+
+.read-content::after {
+    content: " >";
+}
+
+.read-content:hover {
+  color: $background-color;
+  background-color: $brand-color;
+  text-decoration: none;
+}
+
+.read:hover {
+  text-decoration: none;
+}
