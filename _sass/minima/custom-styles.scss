@@ -1,7 +1,7 @@
   // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-.post-content > h2::before, .post-content > h1::before {
+.post-content > h2::before, .post-content > h1::before, .post-content > h3::before {
   content: "# ";
   margin-left: -1.2em;
   color: #2bbc8a;
@@ -38,3 +38,19 @@
     margin-left: 0;
   }
 }
+
+h1 {
+  font-size: 20pt !important;
+}
+
+.post-content > h2 {
+  font-size: 18pt !important;
+}
+
+.post-content > h3 {
+  font-size: 16pt !important;
+}
+
+.post-content > p {
+  font-size: 12pt !important;
+} 

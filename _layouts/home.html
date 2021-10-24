@@ -22,6 +22,12 @@ layout: default
           </a>
         </h3>
         {{ post.subtitle }}
+        <span>
+          {% for tag in post.tags %}
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <a href="/tag/{{ tag_name }}" class="a-tag"><code class="tag"><nobr>{{ tag_name }}</nobr></code></a>
+          {% endfor %}
+        </span>
       </li>
       {%- endfor -%}
     </ul>

@@ -8,14 +8,14 @@ tags: marching-cubes computer-graphic
 
 ## Mesh
 
-# First steps into meshes
+### First steps into meshes
 The first thing I had to do was to Google what a mesh is, because I really had no clue. A quick Wikipedia read and I am now a meshes expert! If you are also confused like I was by this term, it turns out being a really simple concept:
 > In 3D computer graphics and solid modeling, a polygon mesh is a collection of vertices, edges and faces that defines the shape of a polyhedral object.
 > (Courtesy of [Wikipedia](https://en.wikipedia.org/wiki/Polygon_mesh))
 
 Even though I was trying to accomplish it in 2D, I think you got the idea (and if you didn't, you wil soon, just keep reading :p): I am going to try to smooth out the borders of the caves from [my previous post](https://www.herzamos.ch/marching-cubes/2021/04/09/marching-cubes-1.html).
 
-# The algorithm
+### The algorithm
 The algorithm is the same as the one we discussed before for the 3D case, but in 2D (that's why it's called "Marching Squares"). We start by dividing our space into squares, each one having his 4 vertices on 4 adjacent pixels in the drawing (see Figure 1 for an example).
 
 {% include image.html 

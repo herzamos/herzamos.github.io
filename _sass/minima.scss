@@ -11,7 +11,7 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       rgb(226, 222, 222) !default;
-$background-color: #222222 !default;
+$background-color: #222225 !default;
 $brand-color:      #2bbc8a !default;
 
 $grey-color:       #cacaca !default;
@@ -48,4 +48,5 @@ $on-laptop:        800px !default;
   "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",
+  "minima/header.scss",
   "minima/custom-styles.scss";
