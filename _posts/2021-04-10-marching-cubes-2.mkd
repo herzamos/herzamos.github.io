@@ -34,3 +34,5 @@ Each one of these squares will have 4 control points, one on each one of the squ
     url="/assets/img/close-up-marching-squares.png" 
     description="Figure 3: Close up showing the \"control points\"" 
     width="300"%}
+
+Unfortunately, I had to stop working on this "series" of blog posts because of school reasons :( Hopefully, one day I'll come back to it.
