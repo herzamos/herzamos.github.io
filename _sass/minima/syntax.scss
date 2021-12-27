@@ -4,3 +4,9 @@ pre, code, .highlight {
     font-family: 'Source Code Pro', monospace;
 	background-color: #38383d;;
 }
+
+// table background
+table tbody tr:nth-child(even) td,
+table tbody tr.even td {
+  background: #222225;
+}

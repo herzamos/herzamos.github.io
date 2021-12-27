@@ -37,8 +37,6 @@ plugins:
 header_pages: 
   - 
 
-# Markdown
-markdown: redcarpet
 
 # Exclude from processing.
 # The following items will not be processed, by default.
