@@ -9,7 +9,7 @@ tags: C system-programming
 Disclaimer: this post is an adaptation of [this](https://cseweb.ucsd.edu//~ricko/rt_lt.rule.html) blog post, which I felt was not polished enough.
 
 ## Introduction
-Have you ever looked at a C declaration, something like `int *x(int *, int)[]` and wondered "Well, what the hell is that?" before proceeding to get an headache trying to understand how to read it? If the answer is yes, then we are in the same boat! Or at least we were, until I discovered this simple rule which makes reading C declarations as easy as it can get.
+Have you ever looked at a C declaration, something like `int *x(int *, int)` and wondered "Well, what the hell is that?" before proceeding to get an headache trying to understand how to read it? If the answer is yes, then we are in the same boat! Or at least we were, until I discovered this simple rule which makes reading C declarations as easy as it can get.
 
 ## The Rule
 For the following, keep this table in mind:
